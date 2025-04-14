@@ -3,29 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ดูโมเดลใน AR</title>
+  <title>เลือกโมเดล AR</title>
   <style>
     body {
       font-family: sans-serif;
       text-align: center;
-      margin-top: 50px;
+      padding: 30px;
     }
-    a.button {
-      display: inline-block;
-      padding: 15px 30px;
+    h1 {
+      margin-bottom: 40px;
+    }
+    .button {
+      display: block;
+      margin: 10px auto;
+      padding: 15px 25px;
       font-size: 18px;
       background-color: #4CAF50;
       color: white;
       text-decoration: none;
       border-radius: 10px;
+      width: 250px;
     }
   </style>
 </head>
 <body>
-  <h1>เปิดดูโมเดล 3D ใน AR</h1>
+  <h1>เลือกโมเดลเพื่อดูใน AR</h1>
+
   <a class="button"
      href="intent://arvr.google.com/scene-viewer/1.0?file=https://jaaesst.github.io/jaaesstglb/model_jaae.glb&mode=ar_preferred#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://modelviewer.dev/editor/;end;">
-    เปิดใน AR
+    เปิดโมเดล Jaae
   </a>
+
+  <a class="button"
+     href="intent://arvr.google.com/scene-viewer/1.0?file=https://jaaesst.github.io/jaaesstglb/model_blink.glb&mode=ar_preferred#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://modelviewer.dev/editor/;end;">
+    เปิดโมเดล Blink
+  </a>
+
 </body>
 </html>
